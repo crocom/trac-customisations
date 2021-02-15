@@ -11,9 +11,6 @@
 !define AzurePuml https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
 !includeurl AzurePuml/AzureCommon.puml
 
-!define AZURE_BG_COLOR #3F3F3F
-!define AZURE_BORDER_COLOR #0070C0
-
 !includeurl AzurePuml/Databases/all.puml
 !includeurl AzurePuml/Networking/AzureApplicationGateway.puml
 !includeurl AzurePuml/Identity/AzureActiveDirectory.puml
@@ -34,8 +31,6 @@
 !include <tupadr3/common>
 !define ICONURL https://raw.githubusercontent.com/Roemer/plantuml-office/master/office2014
 !includeurl ICONURL/Servers/reverse_proxy.puml
-
-skinparam backgroundColor #3F3F3F
 
 skinparam linetype ortho
 skinparam shadowing false
@@ -58,8 +53,7 @@ skinparam cloud {
 }
 skinparam package {
   BorderColor AZURE_BORDER_COLOR
-  BackgroundColor #003E6C
-  FontColor White
+  BackgroundColor AZURE_BG_COLOR
 }
 skinparam database {
   BorderColor AZURE_BORDER_COLOR
@@ -74,14 +68,7 @@ skinparam rectangle {
   BackgroundColor transparent
 }
 skinparam note {
-  BorderColor White
+  BorderColor AZURE_BORDER_COLOR
   BackgroundColor AZURE_BG_COLOR
-  FontColor White
-}
-skinparam Arrow {
-  Color White
-  FontColor White
-  FontSize 12
-  ArrowFontStyle Bold
 }
 skinparam wrapWidth 140
