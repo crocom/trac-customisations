@@ -31,6 +31,8 @@
 !include <tupadr3/common>
 !define ICONURL https://raw.githubusercontent.com/Roemer/plantuml-office/master/office2014
 !includeurl ICONURL/Servers/reverse_proxy.puml
+!define SPRITESURL https://raw.githubusercontent.com/rabelenda/cicon-plantuml-sprites/v1.0/sprites
+!includeurl SPRITESURL/kafka.puml
 
 skinparam linetype ortho
 skinparam shadowing false
