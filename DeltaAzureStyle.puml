@@ -73,4 +73,13 @@ skinparam note {
   BorderColor AZURE_BORDER_COLOR
   BackgroundColor AZURE_BG_COLOR
 }
+skinparam queue {
+  BorderColor AZURE_BORDER_COLOR
+  BackgroundColor AZURE_BG_COLOR
+}
+skinparam interface {
+  BorderColor AZURE_BORDER_COLOR
+  BackgroundColor AZURE_BG_COLOR
+}
+
 skinparam wrapWidth 140
